@@ -19,13 +19,13 @@ function UINavbar() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Navbar bg="light" expand="lg">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand to="/">
               <img
                 src="./logo.png"
-                width="60"
-                height="50"
+                width="30"
+                height="30"
                 alt="bdigital logo"
               />
             </Navbar.Brand>
