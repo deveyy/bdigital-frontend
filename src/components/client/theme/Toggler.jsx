@@ -13,8 +13,8 @@ const Button = styled.button`
   overflow: hidden;
   padding: 0.2rem;
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   outline: none;
   }
 
