@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
+import Spinner from 'react-bootstrap/Spinner';
 import styled from 'styled-components';
 
 function Home() {
@@ -19,7 +19,6 @@ function Home() {
       await fetch('https://bdigital-5o7iy.ondigitalocean.app/api/home/latest')
         .then((res) => res.json())
         .then((res) => {
-          console.log(res);
           fetchHomes(res);
           setLoading(false); // Stop loading
         });
@@ -47,7 +46,7 @@ function Home() {
     <div>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {loading ? (
-          <div>Loading...</div>
+          <Spinner animation="border" variant="primary" />
         ) : (
           Homes.map((item, i) => {
             return (
