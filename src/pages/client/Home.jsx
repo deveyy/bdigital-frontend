@@ -16,7 +16,7 @@ function Home() {
   const getData = async () => {
     try {
       setLoading(true); // Set loading before sending API request
-      await fetch('https://bdigital-5o7iy.ondigitalocean.app/api/home/latest')
+      await fetch('https://api.bdigital.vn/api/home/latest')
         .then((res) => res.json())
         .then((res) => {
           fetchHomes(res);

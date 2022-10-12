@@ -16,9 +16,7 @@ function Showreel() {
   const getData = async () => {
     try {
       setLoading(true); // Set loading before sending API request
-      await fetch(
-        'https://bdigital-5o7iy.ondigitalocean.app/api/showreel/latest-uploads',
-      )
+      await fetch('https://api.bdigital.vn/api/showreel/latest-uploads')
         .then((res) => res.json())
         .then((res) => {
           fetchShowreels(res);
@@ -38,7 +36,7 @@ function Showreel() {
     <div>
       {['info'].map((variant) => (
         <Alert key={variant} variant={variant} className="text-center">
-          Please, Turn on dark mode on header icon for a better experience !
+          Please, Turn on the dark mode for a better experience !
         </Alert>
       ))}
       <VerticalTimeline>
