@@ -21,14 +21,7 @@ function UINavbar() {
         <GlobalStyles />
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand to="/">
-              <img
-                src="./logo.png"
-                width="30"
-                height="30"
-                alt="bdigital logo"
-              />
-            </Navbar.Brand>
+            <Navbar.Brand to="/">B-digital</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
